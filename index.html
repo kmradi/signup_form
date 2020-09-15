@@ -7,71 +7,73 @@
         <script defer src="indexScript.js"></script>
     </head>
     <body>
-        <form action="confirmation.html" method="GET" id='form'>
-            <div>
-                <label for="userid">User Id </label><br>
-                <!-- <input type="text" minlength="6" oninvalid="setCustomValidity(' minimum size of id is 6 ')" name="userid" id="userid" required > -->
-                <input type="text" name="userid" id="userid" minlength="6" required >
-            </div>
-             <div>
-                <label for="pswd">Password </label><br>
-                <input type="password" name="pswd" id="pswd" required >
-            </div>
-            <div>
-                <label for="name">Name </label><br>
-                <input type="text" name="name" id="name" required >
-                <!-- <input pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Only english alphabets allowed')" type="text" name="name" id="name" required > -->
-            </div>
-            <div>
-                <label for="country">Select your Country </label><br>
-                <select name="country" id="country">
-                    <option value="india">India</option>
-                    <option value="usa">USA</option>
-                    <option value="france">France</option>
-                    <option value="austrailia">Austrailia</option>
-                </select>
-            </div>
-            <div>
-                <label for="zip">ZIP Code</label><br>
-                <input type="number" name="zip" id="zip" min="0" >
-            </div>
-            <div>
-                <label for="email">Email</label><br>
-                <input type="email" name="email" id="email" required >
-            </div>
-            <div>
-                Gender<br>
-                <div>
-                    <label for="male">Male</label>
-                    <input type="radio" name="gender" id="male" value="male">
+        <div id='first'>
+            <form action="confirmation.html" method="GET" id='form'>
+                <div class="second">
+                    <label for="userid">User Id </label><br>
+                    <!-- <input type="text" minlength="6" oninvalid="setCustomValidity(' minimum size of id is 6 ')" name="userid" id="userid" required > -->
+                    <input type="text" name="userid" id="userid" required >
                 </div>
-                <div>
-                    <label for="female">Female</label>
-                    <input type="radio" name="gender" id="female" value="female">
+                 <div class="second">
+                    <label for="pswd">Password </label><br>
+                    <input type="password" name="pswd" id="pswd" required >
                 </div>
-                <div>
-                    <label for="other">Other</label>
-                    <input type="radio" name="gender" id="other" value="other">
+                <div class="second">
+                    <label for="name">Name </label><br>
+                    <input type="text" name="name" id="name" required >
+                    <!-- <input pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Only english alphabets allowed')" type="text" name="name" id="name" required > -->
                 </div>
-            </div>
-            <div>
-                Languages<br>
-                <div>
-                    <label for='hin'>Hindi</label>
-                    <input type="checkbox" name="hindi" id="hin">
+                <div class="second">
+                    <label for="country">Select your Country </label><br>
+                    <select name="country" id="country">
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="france">France</option>
+                        <option value="austrailia">Austrailia</option>
+                    </select>
                 </div>
-                <div>
-                    <label for='eng'>English</label>
-                    <input type="checkbox" name="english" id="eng">
+                <div class="second">
+                    <label for="zip">ZIP Code</label><br>
+                    <input type="number" name="zip" id="zip" min="0" >
                 </div>
-                <div>
-                    <label for='kan'>Kannada</label>
-                    <input type="checkbox" name="kannada" id="kan">
+                <div class="second">
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" required >
                 </div>
-            </div>
-            <div>
-                <input type="submit" value="Submit">
-            </div>
-        </form>
+                <div class="second">
+                    Gender<br>
+                    <div class="third">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="male" value="male">
+                    </div>
+                    <div class="third">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                    </div>
+                    <div class="third">
+                        <label for="other">Other</label>
+                        <input type="radio" name="gender" id="other" value="other">
+                    </div>
+                </div>
+                <div class="second boxes">
+                    Languages<br>
+                    <div class="third">
+                        <label for='hin'>Hindi</label>
+                        <input type="checkbox" name="hindi" id="hin">
+                    </div>
+                    <div class="third">
+                        <label for='eng'>English</label>
+                        <input type="checkbox" name="english" id="eng">
+                    </div>
+                    <div class="third">
+                        <label for='kan'>Kannada</label>
+                        <input type="checkbox" name="kannada" id="kan">
+                    </div>
+                </div>
+                <div class="second">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
     </body>
 </html>
