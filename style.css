@@ -38,6 +38,7 @@ select{
     border-radius: 10px;
     width: 101%;
     border-width: medium;
+    font-size: 100%;
   }
 input[type='radio'] { transform: scale(2); }
 input[type='checkbox'] { transform: scale(2); }
