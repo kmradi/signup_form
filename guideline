@@ -1,0 +1,17 @@
+a.       UserId -> Min length should be 6 digits
+
+b.       Password -> Must have at least 1  Capital letter ,number  and minimum of 8 digits and doesn’t contain the userId.
+
+c.       Name -> should allow only Alphabets
+
+d.       Country -> create a dropdown with list of names
+
+e.       ZIP Code -> should allow only Numeric values
+
+f.        Email -> regular expression validation need to done
+
+g.       Gender -> Create a radio Button Male, Female
+
+h.       Languages -> Create checkboxes and they should be able to select multiple values
+
+i.         On Submit show a pop with the details filled in the specific filed and validations need to done.

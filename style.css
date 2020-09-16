@@ -68,14 +68,19 @@ body{
 #welcome{
     float: left;
     margin: 5% 0 0 5%;
-    color: rgb(65, 60, 144);
+    color: rgb(42, 30, 211);
     font-size: 170%;
 }
 h2{
-    color: rgb(64, 128, 0);
+    color: rgb(65, 118, 13);
+}
+.error{
+  color: red;
+  font-size: 75%;
+  margin-left:15%;
 }
 #submit{
-    background-color: chartreuse;
+    background-color: rgb(122, 228, 0);
     border-radius: 500px;
     float: right;
     width: 150px;

@@ -16,16 +16,20 @@
                 <div class="second">
                     <label for="userid">User Id </label><br>
                     <!-- <input type="text" minlength="6" oninvalid="setCustomValidity(' minimum size of id is 6 ')" name="userid" id="userid" required > -->
-                    <input type="text" name="userid" id="userid" required >
+                    <input type="text" name="userid" id="userid" >
                 </div>
+                <div class='error' id='uiderror'></div>
                  <div class="second">
                     <label for="pswd">Password </label><br>
-                    <input type="password" name="pswd" id="pswd" required >
+                    <input type="password" name="pswd" id="pswd" >
                 </div>
+                <div class='error' id='pswderror1'></div>
+                <div class='error' id='pswderror2'></div>
+                <div class='error' id='pswderror3'></div>
+                <div class='error' id='pswderror4'></div>
                 <div class="second">
                     <label for="name">Name </label><br>
-                    <input type="text" name="name" id="name" required >
-                    <!-- <input pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Only english alphabets allowed')" type="text" name="name" id="name" required > -->
+                    <input type="text" name="name" id="name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" >
                 </div>
                 <div class="second">
                     <label for="country">Select your Country </label><br>
@@ -38,12 +42,13 @@
                 </div>
                 <div class="second">
                     <label for="zip">ZIP Code</label><br>
-                    <input type="number" name="zip" id="zip" min="0" >
+                    <input type="number" name="zip" id="zip" onkeypress="return (event.charCode > 47 && event.charCode < 58)" >
                 </div>
                 <div class="second">
                     <label for="email">Email</label><br>
-                    <input type="email" name="email" id="email" required >
+                    <input type="email" name="email" id="email">
                 </div>
+                <div class='error' id='emailerror'></div>
                 <div class="second">
                     Gender<br>
                     <div class="third">
