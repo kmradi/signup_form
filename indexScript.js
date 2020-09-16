@@ -44,7 +44,7 @@ form.addEventListener('submit',(e) => {
     // {
     //     messages.push('Name can contain alphabets only');
     // }
-    if(pswd.value.length < 8) 
+    if(pswd.value.length > 0 && pswd.value.length < 8) 
     {
         messages.push("Password must contain at least 8 characters!");
         // flag++;
